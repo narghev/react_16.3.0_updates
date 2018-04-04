@@ -9,7 +9,8 @@ import ErrorHandling from './components/error_handling';
 import ThemedText from './components/context_api/consumer';
 import ThemeProvider from './components/context_api/provider';
 
-import GetDerivedStateFromProps from './components/get_derived_state_from_props';
+import GetDerivedStateFromProps from './components/new_lcm/get_derived_state_from_props';
+import GetSnapshotBeforeUpdate from './components/new_lcm/get_snapshot_before_update';
 
 class App extends Component {
   render() {
@@ -22,7 +23,8 @@ class App extends Component {
           {/* <ThemeProvider>
             <ThemedText />
           </ThemeProvider> */}
-          <GetDerivedStateFromProps />
+          {/* <GetDerivedStateFromProps /> */}
+          <GetSnapshotBeforeUpdate />
         </div>
       </React.StrictMode>
     );
