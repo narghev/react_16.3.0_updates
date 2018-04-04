@@ -9,7 +9,7 @@ import ErrorHandling from './components/error_handling';
 import ThemedText from './components/context_api/consumer';
 import ThemeProvider from './components/context_api/provider';
 
-import NewLCM from './components/new_lcm';
+import GetDerivedStateFromProps from './components/get_derived_state_from_props';
 
 class App extends Component {
   render() {
@@ -22,7 +22,7 @@ class App extends Component {
           {/* <ThemeProvider>
             <ThemedText />
           </ThemeProvider> */}
-          <NewLCM />
+          <GetDerivedStateFromProps />
         </div>
       </React.StrictMode>
     );

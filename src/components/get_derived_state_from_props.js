@@ -21,7 +21,7 @@ class Num extends React.Component {
 }
 
 export default
-class NewLCM extends React.Component {
+class GetDerivedStateFromProps extends React.Component {
   constructor(){
     super();
     this.state = {
