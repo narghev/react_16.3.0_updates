@@ -14,6 +14,7 @@ import GetSnapshotBeforeUpdate from './components/new_lcm/get_snapshot_before_up
 
 import CallBackRef from './components/ref_api/callback_ref';
 import CreateRef from './components/ref_api/createref_ref';
+import ForwardRef from './components/ref_api/forward_ref';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
           {/* <GetSnapshotBeforeUpdate /> */}
           {/* <CallBackRef /> */}
           {/* <CreateRef /> */}
+          {/* <ForwardRef /> */}
         </div>
       </React.StrictMode>
     );
