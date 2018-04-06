@@ -21,17 +21,17 @@ class App extends Component {
     return (
       <React.StrictMode>
         <div className="App">
-          {/* <LCMChanges /> */}
           {/* <ReturningArray /> */}
           {/* <ErrorHandling /> */}
           {/* <ThemeProvider>
             <ThemedText />
           </ThemeProvider> */}
-          {/* <GetDerivedStateFromProps /> */}
-          {/* <GetSnapshotBeforeUpdate /> */}
           {/* <CallBackRef /> */}
           {/* <CreateRef /> */}
           {/* <ForwardRef /> */}
+          {/* <LCMChanges /> */}
+          {/* <GetDerivedStateFromProps /> */}
+          <GetSnapshotBeforeUpdate />
         </div>
       </React.StrictMode>
     );
