@@ -12,6 +12,8 @@ import ThemeProvider from './components/context_api/provider';
 import GetDerivedStateFromProps from './components/new_lcm/get_derived_state_from_props';
 import GetSnapshotBeforeUpdate from './components/new_lcm/get_snapshot_before_update';
 
+import CallBackRef from './components/ref_api/callback_ref';
+
 class App extends Component {
   render() {
     return (
@@ -24,7 +26,8 @@ class App extends Component {
             <ThemedText />
           </ThemeProvider> */}
           {/* <GetDerivedStateFromProps /> */}
-          <GetSnapshotBeforeUpdate />
+          {/* <GetSnapshotBeforeUpdate /> */}
+          <CallBackRef />
         </div>
       </React.StrictMode>
     );
