@@ -10,6 +10,7 @@ class Num extends React.Component {
   static getDerivedStateFromProps(nextProps, prevState){
     console.log('nextProps', nextProps);
     console.log('prevState', prevState);
+    if (nextProps.number % 3 === 0) return null;
     return nextProps;
   }
 

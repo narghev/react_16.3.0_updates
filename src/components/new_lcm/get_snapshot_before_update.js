@@ -2,19 +2,28 @@ import React from 'react';
 
 export default
 class GetSnapshotBeforeUpdate extends React.Component {
-  state = {
-    n: 0
+
+  constructor(){
+    super();
+    this.inputRef = React.createRef();
+    this.state = {
+      array: []
+    }
   }
   
   clickHandler = () => {
-    this.setState({n: this.state.n+1});
+    const text = this.inputRef.current.value;
+    this.setState({array: [...this.state.array, text]});
   };
 
   render(){
     return(
       <div>
+        <input ref={this.inputRef} />
         <button onClick={this.clickHandler}>Click</button>
-        <p>{this.state.n}</p>
+        <div>
+          {this.state.array.map( (t, i) => <p key={i}>{`${i}. ${t}`}</p>)}
+        </div>
       </div>
     );
   }
