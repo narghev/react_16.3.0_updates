@@ -13,6 +13,7 @@ import GetDerivedStateFromProps from './components/new_lcm/get_derived_state_fro
 import GetSnapshotBeforeUpdate from './components/new_lcm/get_snapshot_before_update';
 
 import CallBackRef from './components/ref_api/callback_ref';
+import CreateRef from './components/ref_api/createref_ref';
 
 class App extends Component {
   render() {
@@ -27,7 +28,8 @@ class App extends Component {
           </ThemeProvider> */}
           {/* <GetDerivedStateFromProps /> */}
           {/* <GetSnapshotBeforeUpdate /> */}
-          <CallBackRef />
+          {/* <CallBackRef /> */}
+          {/* <CreateRef /> */}
         </div>
       </React.StrictMode>
     );
