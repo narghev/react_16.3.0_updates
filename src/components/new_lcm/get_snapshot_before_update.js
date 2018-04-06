@@ -21,7 +21,7 @@ class GetSnapshotBeforeUpdate extends React.Component {
       <div>
         <input ref={this.inputRef} />
         <button onClick={this.clickHandler}>Click</button>
-        <div>
+        <div style={{maxHeight: '100px', overflowY: 'auto'}}>
           {this.state.array.map( (t, i) => <p key={i}>{`${i}. ${t}`}</p>)}
         </div>
       </div>
