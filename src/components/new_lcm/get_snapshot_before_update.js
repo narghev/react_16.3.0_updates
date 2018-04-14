@@ -1,12 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const TextsDiv = styled.div`
-  max-height: 100px;
-  width: 100px;
-  overflow-y: auto;
-  background-color: yellow;
-`;
+const divStyle = {
+  maxHeight: '100px',
+  width: '100px',
+  overflowY: 'auto',
+  backgroundColor: 'yellow'
+};
 
 class Texts extends React.Component {
 
@@ -27,9 +26,9 @@ class Texts extends React.Component {
 
   render(){
     return(
-      <TextsDiv ref={this.divRef} >
+      <div style={divStyle} ref={this.divRef} >
         {this.props.array.map( (t, i) => <p key={i}>{`${i}. ${t}`}</p>)}
-      </TextsDiv>
+      </div>
     );
   }
 }
